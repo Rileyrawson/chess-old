@@ -10,6 +10,10 @@ import java.util.Collection;
  */
 public class ChessGame {
 
+    private TeamColor team = TeamColor.WHITE; //white always goes first, set later in game logic
+    private ChessBoard board;
+
+
     public ChessGame() {
 
     }
@@ -28,7 +32,8 @@ public class ChessGame {
      * @param team the team whose turn it is
      */
     public void setTeamTurn(TeamColor team) {
-        throw new RuntimeException("Not implemented");
+        //throw new RuntimeException("Not implemented");
+        this.team = team;
     }
 
     /**
@@ -100,7 +105,8 @@ public class ChessGame {
      * @param board the new board to use
      */
     public void setBoard(ChessBoard board) {
-        throw new RuntimeException("Not implemented");
+        //throw new RuntimeException("Not implemented");
+        this.board = board;
     }
 
     /**
@@ -109,6 +115,7 @@ public class ChessGame {
      * @return the chessboard
      */
     public ChessBoard getBoard() {
-        throw new RuntimeException("Not implemented");
+        //throw new RuntimeException("Not implemented");
+        return this.board;
     }
 }

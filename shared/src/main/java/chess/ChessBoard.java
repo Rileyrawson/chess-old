@@ -41,7 +41,7 @@ public class ChessBoard {
         throw new RuntimeException("Not implemented");
     }
 
-    //create toString function that prints out what the bord looks like
+    //TODO: create toString function that prints out what the board looks like
 
 }
 
