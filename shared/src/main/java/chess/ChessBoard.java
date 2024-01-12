@@ -40,4 +40,10 @@ public class ChessBoard {
     public void resetBoard() {
         throw new RuntimeException("Not implemented");
     }
+
+    //create toString function that prints out what the bord looks like
+
 }
+
+
+

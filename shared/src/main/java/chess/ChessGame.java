@@ -18,7 +18,8 @@ public class ChessGame {
      * @return Which team's turn it is
      */
     public TeamColor getTeamTurn() {
-        throw new RuntimeException("Not implemented");
+        //throw new RuntimeException("Not implemented");
+        return TeamColor.WHITE;
     }
 
     /**
@@ -45,9 +46,12 @@ public class ChessGame {
      * @return Set of valid moves for requested piece, or null if no piece at
      * startPosition
      */
-    public Collection<ChessMove> validMoves(ChessPosition startPosition) {
-        throw new RuntimeException("Not implemented");
+    public Collection<ChessMove> validMoves(ChessPosition startPosition) { // collection = can return any type of collection data structure
+        throw new RuntimeException("Not implemented");  // pass in the piece's curr position. Returns an iterable collection of all possible moves
     }
+
+    //make validMovesBishop etc for each piece type and call in validMoves above
+
 
     /**
      * Makes a move in a chess game
@@ -55,8 +59,8 @@ public class ChessGame {
      * @param move chess move to preform
      * @throws InvalidMoveException if move is invalid
      */
-    public void makeMove(ChessMove move) throws InvalidMoveException {
-        throw new RuntimeException("Not implemented");
+    public void makeMove(ChessMove move) throws InvalidMoveException { //test case passes in wanted move. Calls validMoves and gets collection. If not in collection, throws invalid move
+        throw new RuntimeException("Not implemented");  // this function should call valid moves!!
     }
 
     /**
