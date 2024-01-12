@@ -8,8 +8,14 @@ package chess;
  */
 public class ChessBoard {
 
+
+    private final int row = 8;
+    private final int col = 8;
+    private ChessPiece[][] board;
+
+
     public ChessBoard() {
-        
+        this.board = new ChessPiece[row][col];
     }
 
     /**
@@ -18,8 +24,13 @@ public class ChessBoard {
      * @param position where to add the piece to
      * @param piece    the piece to add
      */
-    public void addPiece(ChessPosition position, ChessPiece piece) {
-        throw new RuntimeException("Not implemented");
+    public void addPiece(ChessPosition position, ChessPiece piece) {  //position = row,col
+        //throw new RuntimeException("Not implemented");
+
+        int row = position.getRow()-1; //-1 because the board starts at 1 not 0
+        int col = position.getColumn()-1;
+        this.board[row][col] = piece; // piece object holds color and type. linking the piece to the "spot" on th board
+
     }
 
     /**
